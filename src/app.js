@@ -1,11 +1,37 @@
+/* eslint-disable */
+import "bootstrap";
+import "./style.css";
+
+import "./assets/img/rigo-baby.jpg";
+import "./assets/img/4geeks.ico";
+
 window.onload = function() {
   document.getElementById("boton").addEventListener("click", () => {
     let result = excusaFinal();
+    cargaCss();
     document.getElementById("excuse").innerHTML = result[0];
     document.getElementById("quienImagen").innerHTML = result[1];
     document.getElementById("queImagen").innerHTML = result[2];
     document.getElementById("cuandoImagen").innerHTML = result[3];
   });
+
+  function cargaCss() {
+    // Get HTML head element
+    var head = document.getElementsByTagName("HEAD")[0];
+
+    // Create new link Element
+    var link = document.createElement("link");
+
+    // set the attributes for link element
+    link.rel = "stylesheet";
+
+    link.type = "text/css";
+
+    link.href = "cssDani.css";
+
+    // Append link element to HTML head
+    head.appendChild(link);
+  }
 
   function excusaFinal() {
     let quien = [
@@ -35,7 +61,6 @@ window.onload = function() {
     let queIndex = Math.floor(Math.random() * que.length);
     let cuandoIndex = Math.floor(Math.random() * cuando.length);
 
-    console.log(quienIndex);
     let excusaFinal = quien[quienIndex] + que[queIndex] + cuando[cuandoIndex];
 
     let quienImagen = [
@@ -47,7 +72,7 @@ window.onload = function() {
       "https://www.nintenderos.com/wp-content/uploads/2017/02/71455290.jpg"
     ];
 
-    let mostrarQuienImagen = `<img src="${quienImagen[quienIndex]}"  class="img-fluid img-thumbnail border-0"/>`;
+    let mostrarQuienImagen = `<img src="${quienImagen[quienIndex]}"  class="comicImagen "/>`;
 
     let queImagen = [
       "https://img.blogs.es/anexom/wp-content/uploads/2018/07/anger-room.jpg",
@@ -57,7 +82,7 @@ window.onload = function() {
       "https://www.latercera.com/resizer/fa4emg5E1Jm5etLjcYWmm4EDhPQ=/900x600/filters:focal(1020x228:1030x218)/cloudfront-us-east-1.images.arcpublishing.com/copesa/FE43BZR7FND5DEHB4DNQZQOEWI.jpg"
     ];
 
-    let mostrarQueImagen = `<img src="${queImagen[queIndex]}" class=" img-fluid img-thumbnail border-0"/>`;
+    let mostrarQueImagen = `<img src="${queImagen[queIndex]}" class="comicImagen "/>`;
 
     let cuandoImagen = [
       "https://media.glamour.mx/photos/619083f02d97bd4c522a9d79/master/w_1600,c_limit/203867.jpg",
@@ -66,7 +91,7 @@ window.onload = function() {
       "https://www.theneweconomy.com/wp-content/uploads/2016/03/China-nuclear-reactor-construction.jpg",
       "https://www.wikihow.com/images/thumb/9/9c/Save-in-The-Legend-of-Zelda-Games-Step-14.jpg/aid5377845-v4-728px-Save-in-The-Legend-of-Zelda-Games-Step-14.jpg.webp"
     ];
-    let mostrarCuandoImagen = `<img src="${cuandoImagen[cuandoIndex]}" class="img-fluid img-thumbnail border-0"/>`;
+    let mostrarCuandoImagen = `<img src="${cuandoImagen[cuandoIndex]}" class="comicImagen"/>`;
 
     return [
       excusaFinal,
