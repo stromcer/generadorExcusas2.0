@@ -1,11 +1,78 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
-
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-
 window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
+  document.getElementById("boton").addEventListener("click", () => {
+    let result = excusaFinal();
+    document.getElementById("excuse").innerHTML = result[0];
+    document.getElementById("quienImagen").innerHTML = result[1];
+    document.getElementById("queImagen").innerHTML = result[2];
+    document.getElementById("cuandoImagen").innerHTML = result[3];
+  });
+
+  function excusaFinal() {
+    let quien = [
+      "El perro ",
+      "Mi abuela ",
+      "Un mono de tres cabezas ",
+      "Elvis presley resucitado ",
+      "Uno de los monty python ",
+      "Ganondorf "
+    ];
+    let que = [
+      "lo ha destrozado ",
+      "lo usó como ingrediente para pizzas ",
+      "lo utilizo como un bolo ",
+      "lo quemo mientras probaba un traje ignifugo ",
+      "lo chasqueo como si fuera thanos y desaparecio "
+    ];
+    let cuando = [
+      "mientras cenaba.",
+      "cuando estaba jugando.",
+      "a media dungeon mitica.",
+      "cuando construia un reactor nuclear.",
+      "mientras estaba en el pasado salvando hyrule"
+    ];
+
+    let quienIndex = Math.floor(Math.random() * quien.length);
+    let queIndex = Math.floor(Math.random() * que.length);
+    let cuandoIndex = Math.floor(Math.random() * cuando.length);
+
+    console.log(quienIndex);
+    let excusaFinal = quien[quienIndex] + que[queIndex] + cuando[cuandoIndex];
+
+    let quienImagen = [
+      "https://i.imgur.com/zXGdRb3.jpg",
+      "https://www.escudodigital.com/uploads/s1/11/22/34/abuela-condenada-fotos-menores.jpeg",
+      "https://64.media.tumblr.com/75cba4a084fafc12315377d1c4a840da/tumblr_mtade5YBIB1sh3xeyo1_400.jpg",
+      "https://ichef.bbci.co.uk/news/976/cpsprodpb/4D8E/production/_95845891_img_4419.jpg.webp",
+      "https://phantom-elmundo.unidadeditorial.es/8a38e700cc89eaa02490fe89603df7e4/resize/473/f/webp/assets/multimedia/imagenes/2020/01/22/15797007276268.gif",
+      "https://www.nintenderos.com/wp-content/uploads/2017/02/71455290.jpg"
+    ];
+
+    let mostrarQuienImagen = `<img src="${quienImagen[quienIndex]}"  class="img-fluid img-thumbnail border-0"/>`;
+
+    let queImagen = [
+      "https://img.blogs.es/anexom/wp-content/uploads/2018/07/anger-room.jpg",
+      "https://www.hogarmania.com/archivos/202102/como-hacer-pizza-casera-masa-recetas-668x400x80xX-1.jpg",
+      "https://hazrevista.org/wp-content/uploads/2014/01/bolos.jpg",
+      "https://m.media-amazon.com/images/I/81C77n2RbCL._AC_SL1500_.jpg",
+      "https://www.latercera.com/resizer/fa4emg5E1Jm5etLjcYWmm4EDhPQ=/900x600/filters:focal(1020x228:1030x218)/cloudfront-us-east-1.images.arcpublishing.com/copesa/FE43BZR7FND5DEHB4DNQZQOEWI.jpg"
+    ];
+
+    let mostrarQueImagen = `<img src="${queImagen[queIndex]}" class=" img-fluid img-thumbnail border-0"/>`;
+
+    let cuandoImagen = [
+      "https://media.glamour.mx/photos/619083f02d97bd4c522a9d79/master/w_1600,c_limit/203867.jpg",
+      "https://previews.123rf.com/images/graphicbee/graphicbee1611/graphicbee161100178/66571623-felices-los-ni%C3%B1os-jugando-bajo-el-sol.jpg",
+      "https://cdnb.20m.es/videojuegos/files/playingwow.jpg",
+      "https://www.theneweconomy.com/wp-content/uploads/2016/03/China-nuclear-reactor-construction.jpg",
+      "https://www.wikihow.com/images/thumb/9/9c/Save-in-The-Legend-of-Zelda-Games-Step-14.jpg/aid5377845-v4-728px-Save-in-The-Legend-of-Zelda-Games-Step-14.jpg.webp"
+    ];
+    let mostrarCuandoImagen = `<img src="${cuandoImagen[cuandoIndex]}" class="img-fluid img-thumbnail border-0"/>`;
+
+    return [
+      excusaFinal,
+      mostrarQuienImagen,
+      mostrarQueImagen,
+      mostrarCuandoImagen
+    ];
+  }
 };
