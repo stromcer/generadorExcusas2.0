@@ -69,7 +69,7 @@ window.onload = function() {
     let quienImagen = [
       "https://i.imgur.com/zXGdRb3.jpg",
       "https://www.escudodigital.com/uploads/s1/11/22/34/abuela-condenada-fotos-menores.jpeg",
-      "https://64.media.tumblr.com/75cba4a084fafc12315377d1c4a840da/tumblr_mtade5YBIB1sh3xeyo1_400.jpg",
+      "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9be23d57-8824-450b-88db-0ae58ef5934e/d1p7knt-55f9999a-e56f-45be-8c38-a02be797a7d3.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzliZTIzZDU3LTg4MjQtNDUwYi04OGRiLTBhZTU4ZWY1OTM0ZVwvZDFwN2tudC01NWY5OTk5YS1lNTZmLTQ1YmUtOGMzOC1hMDJiZTc5N2E3ZDMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.3CqnlobhYEZqr7dZ4TCTZYIiXOxB9fEorD8FvlQ2o-A",
       "https://ichef.bbci.co.uk/news/976/cpsprodpb/4D8E/production/_95845891_img_4419.jpg.webp",
       "https://phantom-elmundo.unidadeditorial.es/8a38e700cc89eaa02490fe89603df7e4/resize/473/f/webp/assets/multimedia/imagenes/2020/01/22/15797007276268.gif",
       "https://www.nintenderos.com/wp-content/uploads/2017/02/71455290.jpg"
