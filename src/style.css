@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
 .comicImagen {
   background-color: white;
   width: 100%;
@@ -13,9 +16,15 @@ body {
 }
 
 .comic {
+  font-family: "Covered By Your Grace";
   background: linear-gradient(
     to bottom right,
     rgb(255, 252, 210),
     rgb(252, 255, 78)
   );
+}
+
+.titulo {
+  font-family: "Pacifico";
+  color: silver;
 }

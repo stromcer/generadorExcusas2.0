@@ -1,18 +1,21 @@
 /* eslint-disable */
 import "bootstrap";
 import "./style.css";
-
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function() {
-  document.getElementById("boton").addEventListener("click", () => {
+  let randomizar = () => {
     let result = excusaFinal();
-    cargaCss();
     document.getElementById("excuse").innerHTML = result[0];
     document.getElementById("quienImagen").innerHTML = result[1];
     document.getElementById("queImagen").innerHTML = result[2];
     document.getElementById("cuandoImagen").innerHTML = result[3];
+  };
+  randomizar();
+
+  document.getElementById("boton").addEventListener("click", () => {
+    randomizar();
   });
 
   function cargaCss() {
