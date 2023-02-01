@@ -44,13 +44,18 @@ window.onload = function() {
       "Elvis presley resucitado",
       "Uno de los monty python",
       "Ganondorf",
+      "Un velocirraptor en moto lanzando petalos",
+      "Jesucristo-colega",
+      "La rana Pepe",
+      "Cristian",
     ];
     let que = [
       "lo ha destrozado",
       "lo usó como ingrediente para pizzas",
       "lo utilizo como un bolo",
-      "lo quemo mientras probaba un traje ignifugo",
-      "lo chasqueo como si fuera thanos y desaparecio",
+      "se quemo mientras probaba un traje ignifugo",
+      "chasqueo con el guante de thanos y desaparecio",
+      "estaba usandolo como un Frisbee",
     ];
     let cuando = [
       "mientras cenaba",
@@ -73,6 +78,10 @@ window.onload = function() {
       "https://ichef.bbci.co.uk/news/976/cpsprodpb/4D8E/production/_95845891_img_4419.jpg.webp",
       "https://phantom-elmundo.unidadeditorial.es/8a38e700cc89eaa02490fe89603df7e4/resize/473/f/webp/assets/multimedia/imagenes/2020/01/22/15797007276268.gif",
       "https://www.nintenderos.com/wp-content/uploads/2017/02/71455290.jpg",
+      "https://scontent.fmad7-1.fna.fbcdn.net/v/t1.18169-9/375267_296045777095916_1749474767_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=9267fe&_nc_ohc=juTNXCce2QoAX86lM3E&_nc_ht=scontent.fmad7-1.fna&oh=00_AfBDgRHd9kuFlPXBNpX4PlruHQOQgQbwBbmGpnZUpaaNug&oe=64011AF2",
+      "https://s1.eestatic.com/2017/04/15/actualidad/actualidad_208739511_32684409_1706x960.jpg",
+      "https://image.cnbcfm.com/api/v1/image/103978904-The_meme_formerly_known_as_Kuk_1.png",
+      "https://ca.slack-edge.com/T0BFXMWMV-U03KR679V5Y-ab2cbae00711-512",
     ];
 
     let mostrarQuienImagen = `<img src="${quienImagen[quienIndex]}"  class="comicImagen "/>`;
@@ -83,6 +92,7 @@ window.onload = function() {
       "https://hazrevista.org/wp-content/uploads/2014/01/bolos.jpg",
       "https://m.media-amazon.com/images/I/81C77n2RbCL._AC_SL1500_.jpg",
       "https://www.latercera.com/resizer/fa4emg5E1Jm5etLjcYWmm4EDhPQ=/900x600/filters:focal(1020x228:1030x218)/cloudfront-us-east-1.images.arcpublishing.com/copesa/FE43BZR7FND5DEHB4DNQZQOEWI.jpg",
+      "https://sports-images.vice.com/images/articles/meta/2015/10/16/ultimate-el-deporte-ms-buena-onda-del-mundo-1445014923.png",
     ];
 
     let mostrarQueImagen = `<img src="${queImagen[queIndex]}" class="comicImagen "/>`;
